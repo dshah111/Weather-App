@@ -12,7 +12,7 @@ const forecast = (lat, long, callback) => {
             callback('Unable to find location', undefined)
          } 
          else {
-            callback(undefined, body.days[0].conditions + ". It is currently " + body.days[0].temp + " degress out.")
+            callback(undefined, body.days[0].conditions + " & windspeed is " + body.days[0].windspeed +  " mph. It is currently " + body.days[0].temp + " degress out.")
         }
     })
 }
